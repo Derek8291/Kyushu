@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>人氣景點</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="/CSS/popular.css">
+  <script src="/JS/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <button class="nav_btn">
+      <span></span>
+    </button>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="/img/kyushu/logo/logo.png" alt="">
+        </a>
+      </div>
+      <ul class="guide">
+          <li><a href="introduce.html">九州介紹</a></li>
+          <li><a href="mytravel.html">我的旅行</a></li>
+          <li><a href="popular.html">人氣景點</a></li>
+          <li><a href="magazine.html">雜誌導覽</a></li>
+        </div>
+      </ul>
+      <ul class="social">
+        <li>
+          <a href="javascript:;">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button class="toTop"></button>
+  </header>
+  <main>
+    <div class="banner">
+      <div class="banner_cntainer">
+        <ul class="banner_photo">
+          <li class="banner_img" id="banner_1">
+            <img src="/img/popularlace/banner1.jpg" alt="">
+          </li>
+          <li class="banner_img" id="banner_2">
+            <img src="/img/popularlace/banner2.jpg" alt="">
+          </li>
+          <li class="banner_img" id="banner_3">
+            <img src="/img/popularlace/banner3.jpg" alt="">
+          </li>
+          <li class="banner_img" id="banner_4">
+            <img src="/img/popularlace/banner4.jpg" alt="">
+          </li>
+        </ul>
+        <div class="banner_btn_area">
+          <div class="banner_btn box_white" id="banner_btn_1"></div>
+          <div class="banner_btn" id="banner_btn_2"></div>
+          <div class="banner_btn" id="banner_btn_3"></div>
+          <div class="banner_btn" id="banner_btn_4"></div>
+        </div>
+        <div class="banner_textarea">
+          <h2>
+            <i class="fas fa-map-marker-alt"></i>
+            宮崎 Miyazaki</h2>
+          <h1>高千穗</h1>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li>人氣景點</li>
+        <li>高千穗</li>
+      </ul>
+    </nav>
+    <aside class="news">
+      <div class="news_contain">
+        <div class="news_title">
+          <h2>最新消息</h2>
+          <a href="">
+            <span>詳細內容</span>
+          </a>
+        </div>
+        <ul>
+          <li>
+            <img src="/img/popularlace/news-1.jpg" alt="">
+            <div class="news_txt_area">
+              <p>21 / 02 / 01  觀光情報</p>
+              <p>鬼切石</p>
+            </div>
+          </li>
+          <li>
+            <img src="/img/popularlace/news-2.jpg" alt="">
+            <div class="news_txt_area">
+              <p>20 / 11 / 01  美食餐飲</p>
+              <p>雞肉炭火燒吾平店</p>
+            </div>
+          </li>
+          <li>
+            <img src="/img/popularlace/news-3.jpg" alt="">
+            <div class="news_txt_area">
+              <p>19 / 09 / 06  地方傳說</p>
+              <p>關於高千穗町</p>           
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <aside class="story">
+      <div class="story_contain">
+        <div class="story_txt">
+          <p>高千穗有許多的神社供奉著與日本神話有關的神，這裡有着神話傳說的源頭。天岩戶神社是講述天照大神的神體隱藏在天岩戶而被世人所祭祀。根據神道神話天皇家的最初的天皇，神武天皇是瓊瓊杵尊的曾孫。</p>
+            <h1>故鄉高千穗</h1>
+        </div>
+      </div>
+    </aside>
+    <main class="content">
+      <div class="decoration"></div>
+      <h1>人氣景點介紹</h1>
+      <div class="content_contain">
+          <div class="content_photo">
+            <div class="content_img canyon_img" id="canyon_1">
+              <img src="/img/popularlace/boat-1.jpg" alt="">
+            </div>
+            <div class="content_img canyon_img" id="canyon_2">
+              <img src="/img/popularlace/boat-2.jpg" alt="">
+            </div>
+            <div class="content_img canyon_img" id="canyon_3">
+              <img src="/img/popularlace/boat-3.jpg" alt="">
+            </div>
+            <div class="content_btn_area canyan_btn">
+              <div id="content_btn_1" class="con_btn_color"></div>
+              <div id="content_btn_2"></div>
+              <div id="content_btn_3"></div>
+            </div>
+          </div>
+          <div class="content_container_txt canyon_txt">
+            <div class="content_container_txt_items">
+              <h1>高千穗峽</h1>
+              <p>高千穗峽是恆古阿蘇火山噴發後形成的溪谷。兩側都有斷崖，與絕景並存的還有在同一峽谷上架起的三座橋，也是高千穗峽的美麗所在。</p>
+              <div class="buttons">
+                <a href="javascript:;">
+                  <span>
+                      詳細內容 
+                      <i class="fas fa-external-link-alt"></i>
+                </span>
+                </a>
+                <a href="javascript:;">
+                  <span>
+                    Googlemap
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
+                </a>           
+              </div>
+            </div>
+            <img src="/img/popularlace/boat-4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="content_contain">
+        <div class="content_container_txt train_txt">
+          <div class="content_container_txt_items">
+            <h1>高千穗鐵道</h1>
+            <p>高千穗的鐵道是以舊改新。途徑荒立神社，還有高千穗棚田，以及通過點著霓虹燈的小山洞，在鐵路上往返5.1公里大約30分鐘的快樂旅途。</p>
+            <div class="buttons">
+              <a href="javascript:;">
+                <span>
+                    詳細內容
+                    <i class="fas fa-external-link-alt"></i>
+              </span>
+              </a>
+              <a href="javascript:;">
+                <span>
+                  Googlemap
+                  <i class="fas fa-map-marker-alt"></i>
+              </span> 
+              </a>           
+            </div>
+          </div>
+          <img src="/img/popularlace/train-4.jpg" alt="">
+        </div>
+        <div class="content_photo">
+          <div class="content_img train_img" id="train_1">
+            <img src="/img/popularlace/train-1.jpg" alt="">
+          </div>
+          <div class="content_img train_img" id="train_2">
+            <img src="/img/popularlace/train-2.jpg" alt="">
+          </div>
+          <div class="content_img train_img" id="train_3">
+            <img src="/img/popularlace/train-3.jpg" alt="">
+          </div>
+          <div class="content_btn_area train_btn">
+            <div id="train_btn_1" class="con_btn_color"></div>
+            <div id="train_btn_2"></div>
+            <div id="train_btn_3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="content_contain">
+        <div class="content_photo">
+          <div class="content_img temple_img" id="temple_1">
+            <img src="/img/popularlace/temple-1.jpg" alt="">
+          </div>
+          <div class="content_img temple_img" id="temple_2">
+            <img src="/img/popularlace/temple-2.jpg" alt="">
+          </div>
+          <div class="content_img temple_img" id="temple_3">
+            <img src="/img/popularlace/temple-3.jpg" alt="">
+          </div>
+          <div class="content_btn_area temple_btn">
+            <div id="temple_btn_1" class="con_btn_color"></div>
+            <div id="temple_btn_2"></div>
+            <div id="temple_btn_3"></div>
+          </div>
+        </div>
+        <div class="content_container_txt temple_txt">
+          <div class="content_container_txt_items">
+            <h1>高千穗神社</h1>
+            <p>高千穗神社是有著1900年的歷史。是這個地域最重要的神社，是高千穗鄉18鄉88社的總社。</p>
+            <div class="buttons">
+              <a href="javascript:;">
+                <span>
+                    詳細內容
+                    <i class="fas fa-external-link-alt"></i>
+              </span>
+              </a>
+              <a href="javascript:;">
+                <span>
+                  Googlemap
+                  <i class="fas fa-map-marker-alt"></i>
+              </span>
+              </a>           
+            </div>
+          </div>
+          <img src="/img/popularlace/temple-4.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="content_contain">
+      <div class="content_container_txt shrine_txt">
+        <div class="content_container_txt_items">
+          <h1>天岩戶神社</h1>
+          <p>天岩戶是祭拜著高天原的天照大神。大神隱藏在天之岩戶中，為了把大神從岩戶引誘出來，神仙們在場地上又唱又跳地把大神給請了出來。</p>
+          <div class="buttons">
+            <a href="javascript:;">
+              <span>
+                  詳細內容
+                  <i class="fas fa-external-link-alt"></i>
+            </span>
+            </a>
+            <a href="javascript:;">
+                Googlemap
+                <i class="fas fa-map-marker-alt"></i>
+            </a>           
+          </div>
+        </div>
+        <img src="/img/popularlace/shrine-4.jpg" alt="">
+      </div>
+      <div class="content_photo">
+        <div class="content_img shrine_img" id="shrine_1">
+          <img src="/img/popularlace/shrine-1.jpg" alt="">
+        </div>
+        <div class="content_img shrine_img" id="shrine_2">
+          <img src="/img/popularlace/shrine-2.jpg" alt="">
+        </div>
+        <div class="content_img shrine_img" id="shrine_3">
+          <img src="/img/popularlace/shrine-3.jpg" alt="">
+        </div>
+        <div class="content_btn_area shrine_btn">
+          <div id="shrine_btn_1" class="con_btn_color"></div>
+          <div id="shrine_btn_2"></div>
+          <div id="shrine_btn_3"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </main>
+    <aside class="others">
+      <div class="others_item">
+        <div class="others_item_photo">
+          <img src="/img/popularlace/other-1.jpg" alt="">
+        </div>
+        <div class="others_item_txt">
+          <h2>高千穗之路</h2>
+          <p>開始於韓國的濟州島，漫步山野的愛好者「漫步濟州」的姊妹版。自己漫步在高千穗的山野中，親身接觸大自然以及五感都得到非常的快樂。</p>
+          <div class="buttons">
+            <a href="javascript:;">
+              <span>
+                  詳細內容
+                  <i class="fas fa-external-link-alt"></i>
+            </span>
+            </a>
+            <a href="javascript:;">
+              <span>
+                Googlemap
+                <i class="fas fa-map-marker-alt"></i>
+            </span>
+            </a>           
+          </div>
+        </div>
+      </div>
+      <div class="others_item">
+        <div class="others_item_photo">
+          <img src="/img/popularlace/other-2.jpg" alt="">
+        </div>
+        <div class="others_item_txt">
+          <h2>國見之丘</h2>
+          <p>國見之丘的名字來源傳說於日本的神話，據說日本初代天皇的孫子在去統治筑紫國的途中經過於此地。2011年被世界旅遊部落客評為米其林綠色旅遊之地。</p>
+          <div class="buttons">
+            <a href="javascript:;">
+              <span>
+                  詳細內容
+                  <i class="fas fa-external-link-alt"></i>
+            </span>
+            </a>
+            <a href="javascript:;">
+              <span>
+                Googlemap
+                <i class="fas fa-map-marker-alt"></i>
+            </span>
+            </a>           
+          </div>
+        </div>
+      </div>
+      <div class="others_item">
+        <div class="others_item_photo">
+          <img src="/img/popularlace/other-3.jpg" alt="">
+        </div>
+        <div class="others_item_txt">
+          <h2>荒立神社</h2>
+          <p>傳說瓊瓊杵尊在聽從了天照大神的吩咐後從天而降來到了這個國度，而後為這一行神仙們領路的猿田彥命和天鈿女命相遇而結婚並居住在此地。</p>
+          <div class="buttons">
+            <a href="javascript:;">
+              <span>
+                  詳細內容
+                  <i class="fas fa-external-link-alt"></i>
+            </span>
+            </a>
+            <a href="javascript:;">
+              <span>
+                Googlemap
+                <i class="fas fa-map-marker-alt"></i>
+            </span>
+            </a>           
+          </div>
+        </div>
+      </div>
+      <div class="others_item">
+        <div class="others_item_photo">
+          <img src="/img/popularlace/other-4.jpg" alt="">
+        </div>
+        <div class="others_item_txt">
+          <h2>槵觸神社</h2>
+          <p>槵觸神社祭拜的是天照大神的孫子瓊瓊杵尊。帶領著眾多的神仙們從天而降臨到高千穗的山峰，這個山峰就是槵觸山峰，槵觸山峰的神社也就是槵觸神社。</p>
+          <div class="buttons">
+            <a href="javascript:;">
+              <span>
+                  詳細內容
+                  <i class="fas fa-external-link-alt"></i>
+            </span>
+            </a>
+            <a href="javascript:;">
+              <span>
+                Googlemap
+                <i class="fas fa-map-marker-alt"></i>
+            </span>
+            </a>           
+          </div>
+        </div>
+      </div>
+      
+    </aside>
+  </main>
+  <footer>
+    <div class="footer_container">
+      <div class="footer_logo">
+        <div class="logo">
+          <a href="Kyushu.html">
+            <img src="/img/kyushu/logo/logo.png" alt="">
+          </a>
+        </div>
+      </div>
+      <ul class="footer_txt">
+        <li><a href="introduce.html">九州介紹</a></li>
+        <li><a href="mytravel.html">我的旅行</a></li>
+        <li><a href="popular.html">人氣景點</a></li>
+        <li><a href="magazine.html">雜誌導覽</a></li>
+      </ul>
+      <ul class="footer_photo">
+        <li>
+          <a href="javascript:;">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p>Copyright &copy; 2021 Jay</p>
+  </footer>
+  <div class="footerPage"></div>
+  <script src="/JS/popoular.js"></script>
+</body>
+</html>
