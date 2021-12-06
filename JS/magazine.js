@@ -273,13 +273,15 @@ window.onload = function() {
     }
 
   // 下方額外內容向上滑入=====================================>
-  $('.magazine_contain').addClass('magazine_move');
+  const magazine_contain = $('.magazine_contain');
+
+  magazine_contain.addClass('magazine_move');
   function bannerMove(){
-    let position = $('.magazine_contain').offset().top;
+    let position = magazine_contain.offset().top;
     if(window.scrollY > position){
-      $('.magazine_contain').removeClass('magazine_move');
+      magazine_contain.removeClass('magazine_move');
     }else{
-      $('.magazine_contain').addClass('magazine_move');
+      magazine_contain.addClass('magazine_move');
     }
   };
 

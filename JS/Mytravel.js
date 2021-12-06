@@ -71,24 +71,29 @@ window.onload = function() {
 
 
 // 開場Banner進來=======================================>
-$('.banner_container_textarea').addClass('bannerMove');
+const banner_container_textarea = $('.banner_container_textarea');
+
+banner_container_textarea.addClass('bannerMove');
   function bannerMove(){
     let position = $('.tramethod').offset().top;
     if(window.scrollY > position){
-      $('.banner_container_textarea').removeClass('bannerMove');
+      banner_container_textarea.removeClass('bannerMove');
     }else{
-      $('.banner_container_textarea').addClass('bannerMove');
+      banner_container_textarea.addClass('bannerMove');
     }
   };
 
 // 九州絕景圖片進來=====================================>
+  const tramethod_top_right = $('.tramethod_top_right');
+  const tramethod_lfImg = $('.tramethod_lfImg');
+  const tramethod_rtImg = $('.tramethod_rtImg');
 
   function tramethodTop(){
     let position = $('.banner').offset().top;
     if(window.scrollY > position){
-      $('.tramethod_top_right').addClass('tramethod_top_right_move');
+      tramethod_top_right.addClass('tramethod_top_right_move');
     }else{
-      $('.tramethod_top_right').removeClass('tramethod_top_right_move');
+      tramethod_top_right.removeClass('tramethod_top_right_move');
 
     }
   }
@@ -96,41 +101,47 @@ $('.banner_container_textarea').addClass('bannerMove');
   function tramethodBottom(){
     let position = $('.tramethod_top_left').offset().top;
     if(window.scrollY > position){
-      $('.tramethod_lfImg').addClass('tramethod_lfImg_move');
-      $('.tramethod_rtImg').addClass('tramethod_rtImg_move');
+      tramethod_lfImg.addClass('tramethod_lfImg_move');
+      tramethod_rtImg.addClass('tramethod_rtImg_move');
     }else{
-      $('.tramethod_lfImg').removeClass('tramethod_lfImg_move');
-      $('.tramethod_rtImg').removeClass('tramethod_rtImg_move');
+      tramethod_lfImg.removeClass('tramethod_lfImg_move');
+      tramethod_rtImg.removeClass('tramethod_rtImg_move');
     }
   }
 
 // 體驗圖片進來=========================================>
+  const experence_top_left_img = $('.experence_top_left_img');
+
   function experenceMove(){
-    let position = ($('.experence').offset().top) - (($('.experence_top_left_img')[0].clientHeight));
+    let position = ($('.experence').offset().top) - ((experence_top_left_img[0].clientHeight));
     if(window.scrollY > position){
-      $('.experence_top_left_img').addClass('experence_top_img_move');
+      experence_top_left_img.addClass('experence_top_img_move');
     }else{
-      $('.experence_top_left_img').removeClass('experence_top_img_move');
+      experence_top_left_img.removeClass('experence_top_img_move');
     }
   }
 
 // 歷史圖片進來=========================================>
+  const history_top_right = $('.history_top_right');
+  const history_lfImg = $('.history_lfImg');
+  const history_rtImg = $('.history_rtImg');
+
   function historyTopMove(){
     let position = $('.experence_bottom').offset().top;
     if(window.scrollY > position){
-      $('.history_top_right').addClass('history_top_right_move');
+      history_top_right.addClass('history_top_right_move');
     }else{
-      $('.history_top_right').removeClass('history_top_right_move');
+      history_top_right.removeClass('history_top_right_move');
     }
   }
   function historyBottomMove(){
     let position = $('.history_top').offset().top;
     if(window.scrollY > position){
-      $('.history_lfImg').addClass('history_lfImg_move');
-      $('.history_rtImg').addClass('history_rtImg_move');
+      history_lfImg.addClass('history_lfImg_move');
+      history_rtImg.addClass('history_rtImg_move');
     }else{
-      $('.history_lfImg').removeClass('history_lfImg_move');
-      $('.history_rtImg').removeClass('history_rtImg_move');
+      history_lfImg.removeClass('history_lfImg_move');
+      history_rtImg.removeClass('history_rtImg_move');
     }
   }
 

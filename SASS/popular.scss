@@ -526,6 +526,7 @@ main{
     margin: 4rem auto;
     position: relative;
     max-width: 1920px;
+    overflow: hidden;
     @include pro{
       margin: 3rem auto;
       // border: 1px solid red;
@@ -565,18 +566,7 @@ main{
         border-left: 5px solid #1b6459;
       }
     }
-    // >.decoration{
-    //   position: absolute;
-    //   width: 20%;
-    //   height: 20%;
-    //   top: -200px;
-    //   left: 0;
-    //   z-index: -999;
-    //   background-color: rgba(67, 185, 168, 0.4);
-    //   @include pro{
-    //     display: none;
-    //   }
-    // }
+
     >.content_contain{
       display: flex;
       align-items: center;
@@ -585,14 +575,23 @@ main{
       height: auto;
       margin-bottom: 2rem;
       overflow: hidden;
-      // border: 1px solid red;
-      
+      transition: transform .7s;
       @include pro{
         flex-direction: column;
         margin: 3rem 0;
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
         width: 95%;
+        transform:translate(100vw);
       }
+
+      &.content_move_rt{
+        transform:translate(5vw);
+      }
+
+      &.content_move_lf{
+        transform:translate(0);
+      }
+      
       >:first-child{
         margin-right: -10%;
         @include pro{
@@ -663,7 +662,6 @@ main{
           @include pro{
             order: -1;
             width: 100%;
-            min-width:auto;
             height: auto;
             background-color: rgba(67, 185, 168, 0.8);
             color: #fff;

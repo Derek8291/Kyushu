@@ -394,46 +394,50 @@ DOMrender(data)
   })
 
 // 景點介紹文字區往上進來============================>
+  const item_textarea = $('.item_textarea');
 
   function textareaMove(){
     let position = ($('.banner_textarea').offset().top) - ($('.item_imagearea')[0].clientHeight / 2);
     if(window.scrollY > position){
-      $('.item_textarea').addClass('item_textarea_move');
+      item_textarea.addClass('item_textarea_move');
     }else{
-      $('.item_textarea').removeClass('item_textarea_move');
+      item_textarea.removeClass('item_textarea_move');
     };
   };
 
 // 地區左邊搜尋往右進來============================>
+  const search_left = $('.search_left');
 
   function searchLeftMove(){
-    let position = ($('.search_left').offset().top) - ($('.search_left')[0].clientHeight)*2;
+    let position = (search_left.offset().top) - (search_left[0].clientHeight)*2;
     if(window.scrollY > position){
-      $('.search_left').addClass('search_left_move');
+      search_left.addClass('search_left_move');
     }else{
-      $('.search_left').removeClass('search_left_move');
+      search_left.removeClass('search_left_move');
     };
   };
 
 // 地區右邊搜尋往左進來============================>
+const search_right = $('.search_right');
 
 function searchRightMove(){
-  let position = ($('.search_right').offset().top) - ($('.search_right')[0].clientHeight)*2;
+  let position = (search_right.offset().top) - (search_right[0].clientHeight)*2;
   if(window.scrollY > position){
-    $('.search_right').addClass('search_right_move');
+    search_right.addClass('search_right_move');
   }else{
-    $('.search_right').removeClass('search_right_move');
+    search_right.removeClass('search_right_move');
   };
 };
 
 // 搜尋物件往上進來============================>
+const viewrelease_item = $('.viewrelease_item');
 
 function viewreleaseMove(){
-  let position = ($('.viewrelease_item').offset().top) - ($('.viewrelease_item')[0].clientHeight*2);
+  let position = (viewrelease_item.offset().top) - (viewrelease_item[0].clientHeight*2);
   if(window.scrollY > position){
-    $('.viewrelease_item').addClass('viewrelease_item_move');
+    viewrelease_item.addClass('viewrelease_item_move');
   }else{
-    $('.viewrelease_item').removeClass('viewrelease_item_move');
+    viewrelease_item.removeClass('viewrelease_item_move');
   };
 };
 

@@ -1,7 +1,10 @@
 window.onload = function() {
 
   var bannerTimeSet = null;
-  // let e = 1;
+  const content1 = document.getElementById("content_1");
+  const content2 = document.getElementById("content_2");
+  const content3 = document.getElementById("content_3");
+  const content4 = document.getElementById("content_4");
   
   $(".banner_photo > li").hide();
   $("#banner_1").show();
@@ -12,7 +15,7 @@ window.onload = function() {
     const idx = $(this)[0].id.split('').reverse()[0];
     bannerDomRender(idx);
     bannerTimeGo(idx);
-    console.log(idx);
+    // console.log(idx);
   }
 
   function bannerTimeGo(i){
@@ -23,7 +26,7 @@ window.onload = function() {
         i = 1;
       }
       bannerDomRender(i);
-      console.log(i);
+      // console.log(i);
     },5000);
   }
 
@@ -186,6 +189,11 @@ window.onload = function() {
       shrineMove();
       bannerTxtMove();
       othersItemMove();
+      content1Move();
+      content2Move();
+      content3Move();
+      content4Move();
+
     }
   
   // 導覽列變色 + Scroll Bar出現 + GoTop=============>
@@ -205,6 +213,7 @@ window.onload = function() {
     })
 
   // 開關導覽列======================================>
+  
     $('.banner_textarea > h2').addClass('banner_textarea_h2_move');
     $('.banner_textarea > h1').addClass('banner_textarea_h1_move');
 
@@ -220,54 +229,105 @@ window.onload = function() {
     }
 
   // 內文文字滑入=====================================>
-
+  const canyon_txt = $('.canyon_txt');
+  const train_txt = $('.train_txt');
+  const temple_txt = $('.temple_txt');
+  const shrine_txt = $('.shrine_txt');
     function canyonMove(){
-      let position = ($('.canyon_txt').offset().top) - ($('.canyon_txt')[0].clientHeight)*2;
+      let position = (canyon_txt.offset().top) - (canyon_txt[0].clientHeight)*2;
       if(window.scrollY > position){
-        $('.canyon_txt').addClass('canyon_txt_move');
+        canyon_txt.addClass('canyon_txt_move');
       }else{
-        $('.canyon_txt').removeClass('canyon_txt_move');
+        canyon_txt.removeClass('canyon_txt_move');
       }
     }
 
     function trainMove(){
-      let position = ($('.train_txt').offset().top) - ($('.train_txt')[0].clientHeight)*2;
+      let position = (train_txt.offset().top) - (train_txt[0].clientHeight)*2;
       if(window.scrollY > position){
-        $('.train_txt').addClass('train_txt_move');
+        train_txt.addClass('train_txt_move');
       }else{
-        $('.train_txt').removeClass('train_txt_move');
+        train_txt.removeClass('train_txt_move');
       }
     }
 
     function templeMove(){
-      let position = ($('.temple_txt').offset().top) - ($('.temple_txt')[0].clientHeight)*2;
+      let position = (temple_txt.offset().top) - (temple_txt[0].clientHeight)*2;
       if(window.scrollY > position){
-        $('.temple_txt').addClass('temple_txt_move');
+        temple_txt.addClass('temple_txt_move');
       }else{
-        $('.temple_txt').removeClass('temple_txt_move');
+        temple_txt.removeClass('temple_txt_move');
       }
     }
 
     function shrineMove(){
-      let position = ($('.shrine_txt').offset().top) - ($('.shrine_txt')[0].clientHeight)*2;
+      let position = (shrine_txt.offset().top) - (shrine_txt[0].clientHeight)*2;
       if(window.scrollY > position){
-        $('.shrine_txt').addClass('shrine_txt_move');
+        shrine_txt.addClass('shrine_txt_move');
       }else{
-        $('.shrine_txt').removeClass('shrine_txt_move');
+        shrine_txt.removeClass('shrine_txt_move');
       }
     }
 
     
   // 下方額外內容向上滑入=====================================>
+  const others_item = $('.others_item');
 
   function othersItemMove(){
-    let position = ($('.others_item').offset().top) - ($('.others_item')[0].clientHeight)*2;
+    let position = (others_item.offset().top) - (others_item[0].clientHeight)*2;
     if(window.scrollY > position){
-      $('.others_item').addClass('others_item_move');
+      others_item.addClass('others_item_move');
     }else{
-      $('.others_item').removeClass('others_item_move');
+      others_item.removeClass('others_item_move');
     }
   }  
 
+  // 高千穗峽滑入===========================================>
+  const content_1 = $('#content_1');
+
+  function content1Move(){
+    let position = (content_1.offset().top) - (content_1[0].clientHeight);
+    if(window.scrollY > position){
+      content_1.addClass('content_move_rt');
+    }else{
+      content_1.removeClass('content_move_rt');
+    }
+  }  
+
+    // 高千穗鐵道滑入===========================================>
+    const content_2 = $('#content_2');
+
+    function content2Move(){
+      let position = (content_2.offset().top) - (content_2[0].clientHeight);
+      if(window.scrollY > position){
+        content_2.addClass('content_move_lf');
+      }else{
+        content_2.removeClass('content_move_lf');
+      }
+    } 
+
+      // 高千穗神社滑入===========================================>
+  const content_3 = $('#content_3');
+
+  function content3Move(){
+    let position = (content_3.offset().top) - (content_3[0].clientHeight);
+    if(window.scrollY > position){
+      content_3.addClass('content_move_rt');
+    }else{
+      content_3.removeClass('content_move_rt');
+    }
+  } 
+
+    // 天岩戶神社滑入===========================================>
+    const content_4 = $('#content_4');
+
+    function content4Move(){
+      let position = (content_4.offset().top) - (content_4[0].clientHeight);
+      if(window.scrollY > position){
+        content_4.addClass('content_move_lf');
+      }else{
+        content_4.removeClass('content_move_lf');
+      }
+    } 
 
 }

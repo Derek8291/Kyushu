@@ -146,24 +146,26 @@ window.onload = function() {
   }
 
 // 雜誌圖片進來=====================================>
+const magazine_contain = $('.magazine_contain');
 
 function magazineMove(){
-  let position = ($('.magazine_contain').offset().top) - ($('.magazine_contain')[0].clientHeight)*3;
+  let position = (magazine_contain.offset().top) - (magazine_contain[0].clientHeight)*2;
   if(window.scrollY > position){
-    $('.magazine_contain').addClass('magazine_move');
+    magazine_contain.addClass('magazine_move');
   }else{
-    $('.magazine_contain').removeClass('magazine_move');
+    magazine_contain.removeClass('magazine_move');
   }
 }
 
 // 景點進來=====================================>
+const travel_contain = $('.travel_contain');
 
 function popularMove(){
-  let position = ($('.travel_contain').offset().top) - ($('.travel_contain')[0].clientHeight)*3;
+  let position = (travel_contain.offset().top) - (travel_contain[0].clientHeight)*3;
   if(window.scrollY > position){
-    $('.travel_contain').addClass('popular_move');
+    travel_contain.addClass('popular_move');
   }else{
-    $('.travel_contain').removeClass('popular_move');
+    travel_contain.removeClass('popular_move');
   }
 }
 

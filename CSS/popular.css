@@ -662,6 +662,7 @@ main > main.content {
   margin: 4rem auto;
   position: relative;
   max-width: 1920px;
+  overflow: hidden;
 }
 
 @media (max-width: 1024px) {
@@ -729,6 +730,11 @@ main > main.content > .content_contain {
   height: auto;
   margin-bottom: 2rem;
   overflow: hidden;
+  -webkit-transition: -webkit-transform .7s;
+  transition: -webkit-transform .7s;
+  -o-transition: transform .7s;
+  transition: transform .7s;
+  transition: transform .7s, -webkit-transform .7s;
 }
 
 @media (max-width: 1024px) {
@@ -742,7 +748,22 @@ main > main.content > .content_contain {
     -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
             box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     width: 95%;
+    -webkit-transform: translate(100vw);
+        -ms-transform: translate(100vw);
+            transform: translate(100vw);
   }
+}
+
+main > main.content > .content_contain.content_move_rt {
+  -webkit-transform: translate(5vw);
+      -ms-transform: translate(5vw);
+          transform: translate(5vw);
+}
+
+main > main.content > .content_contain.content_move_lf {
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
 }
 
 main > main.content > .content_contain > :first-child {
@@ -859,7 +880,6 @@ main > main.content > .content_contain > .content_container_txt.canyon_txt {
         -ms-flex-order: -1;
             order: -1;
     width: 100%;
-    min-width: auto;
     height: auto;
     background-color: rgba(67, 185, 168, 0.8);
     color: #fff;
