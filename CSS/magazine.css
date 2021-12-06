@@ -553,7 +553,7 @@ main > article.magazine_introduce > .magazine_contain > .magazine_item {
 @media (max-width: 768px) {
   main > article.magazine_introduce > .magazine_contain > .magazine_item {
     width: 100%;
-    height: 500px;
+    height: 700px;
   }
 }
 
@@ -573,6 +573,12 @@ main > article.magazine_introduce > .magazine_contain > .magazine_item > .magazi
 @media (max-width: 1024px) {
   main > article.magazine_introduce > .magazine_contain > .magazine_item > .magazine_item_img {
     height: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  main > article.magazine_introduce > .magazine_contain > .magazine_item > .magazine_item_img {
+    height: 70%;
   }
 }
 
@@ -623,11 +629,30 @@ main > article.magazine_introduce > .magazine_contain > .magazine_item > .magazi
   background-color: #fff;
   padding: 3%;
   height: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 1024px) {
   main > article.magazine_introduce > .magazine_contain > .magazine_item > .magazine_item_text {
     height: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  main > article.magazine_introduce > .magazine_contain > .magazine_item > .magazine_item_text {
+    height: 30%;
   }
 }
 

@@ -234,7 +234,7 @@ $('.content_item').on('click', () => {
         return obj.classify === "活動";
       })
           DOMrender(arr);
-          $('html, body').animate({scrollTop: $('.vie wrelease').offset().top}, 500);
+          $('html, body').animate({scrollTop: $('.viewrelease').offset().top}, 500);
     }
 
     function culturebtn(){
