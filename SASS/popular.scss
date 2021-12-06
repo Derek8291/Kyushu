@@ -256,7 +256,7 @@ header{
   }
 }
 main{
-  max-width: 1920px;
+  // max-width: 1920px;
   margin: auto;
   >.banner{
     // margin-top:50px;
@@ -308,7 +308,8 @@ main{
         position: absolute;
         bottom: 0;
         left: 0;
-
+        max-width: 1920px;
+        margin: 0 auto;
         >h2{
           color:rgba(67, 185, 168, 1);
           background-color: #fff;
@@ -811,6 +812,7 @@ main{
     flex-wrap: wrap;
     justify-content: space-between;
     overflow: hidden;
+    max-width: 1920px;
     @include pro{
       width: 100%;
     }

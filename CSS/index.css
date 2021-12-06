@@ -1277,6 +1277,9 @@ main > article.travel_introduce > .travel_contain > .travel_text {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   padding: 20px 20px 20px 30px;
 }
 

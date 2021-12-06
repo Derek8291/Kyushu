@@ -256,7 +256,6 @@ header button.toTop.toTopBtn {
 }
 
 main {
-  max-width: 1920px;
   margin: auto;
 }
 
@@ -321,6 +320,8 @@ main > .banner > .banner_cntainer > .banner_textarea {
   position: absolute;
   bottom: 0;
   left: 0;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 main > .banner > .banner_cntainer > .banner_textarea > h2 {
@@ -1093,6 +1094,7 @@ main aside.others {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
+  max-width: 1920px;
 }
 
 @media (max-width: 1024px) {

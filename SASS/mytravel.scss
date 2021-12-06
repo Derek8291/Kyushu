@@ -259,7 +259,7 @@ header{
 }
 
 article{
-  max-width: 1920px;
+  // max-width: 1920px;
   margin: auto;
   // margin-top: 50px;
   >.banner{
@@ -448,6 +448,7 @@ article{
   >section.tramethod{
     width: 100%;
     margin: 3rem auto;
+    max-width: 1920px;
     @include pro{
       height: auto;
     }
@@ -661,6 +662,7 @@ article{
     >.experence_contain{
       width: 100%;
       margin: auto;
+      max-width: 1920px;
       >.experence_top{
         width: 100%;
         margin-bottom: 5rem;
@@ -788,6 +790,7 @@ article{
   >section.history{
     width: 100%;
     margin: 0 auto 8rem;
+    max-width: 1920px;
     >h1{
       margin-bottom:2rem;
       position: relative;
@@ -997,6 +1000,7 @@ article{
     background-color: rgba(67, 185, 168, 0.1);
     >.hotel_contain{
       width: 80%;
+      max-width: 1920px;
       margin: 1rem auto;
       >h1{
         font-size: 80px;
@@ -1156,6 +1160,7 @@ article{
     width: 100%;
     background-color: #fff;
     >.food_contain{
+      max-width: 1920px;
       width: 80%;
       margin: 1rem auto;
       >h1{

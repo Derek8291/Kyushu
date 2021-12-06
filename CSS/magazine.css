@@ -255,11 +255,6 @@ header button.toTop.toTopBtn {
           transform: rotate(-45deg);
 }
 
-main {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
 main > .banner > .banner_cntainer {
   height: 75vh;
   width: 100%;
@@ -366,6 +361,7 @@ main > .banner > .banner_cntainer > .banner_textarea > h1.banner_textarea_h1_mov
 }
 
 main > nav {
+  max-width: 1920px;
   width: 80%;
   margin: 0 auto;
   font-weight: 300;

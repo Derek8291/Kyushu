@@ -306,6 +306,7 @@ main > article .banner .banner_container .banner_imagearea > h1:hover {
 main > article .banner .banner_container > .banner_textarea {
   position: relative;
   background-color: #fff;
+  max-width: 1920px;
   width: 80%;
   margin: auto;
 }
@@ -370,6 +371,7 @@ main > article .banner .banner_container > .banner_textarea > p {
 main > article > .content {
   width: 80%;
   margin: auto;
+  max-width: 1920px;
 }
 
 @media (max-width: 1024px) {
@@ -515,6 +517,7 @@ main > article.search {
 }
 
 main > article.search > .search_contain {
+  max-width: 1920px;
   width: 80%;
   margin: auto;
   display: -webkit-box;
@@ -1177,7 +1180,7 @@ main article.viewrelease > .viewrelease_contain {
 
 main article.viewrelease > .viewrelease_contain > .viewrelease_item {
   width: 33%;
-  height: 400px;
+  height: 500px;
   float: left;
   cursor: pointer;
   padding: 0 10px;

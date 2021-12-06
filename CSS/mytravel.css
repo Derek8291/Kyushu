@@ -256,7 +256,6 @@ header button.toTop.toTopBtn {
 }
 
 article {
-  max-width: 1920px;
   margin: auto;
 }
 
@@ -535,6 +534,7 @@ article > .banner > .banner_container > .banner_container_bottom > p {
 article > section.tramethod {
   width: 100%;
   margin: 3rem auto;
+  max-width: 1920px;
 }
 
 @media (max-width: 1024px) {
@@ -875,6 +875,7 @@ article section.experence {
 article section.experence > .experence_contain {
   width: 100%;
   margin: auto;
+  max-width: 1920px;
 }
 
 article section.experence > .experence_contain > .experence_top {
@@ -1099,6 +1100,7 @@ article section.experence > .experence_contain > .experence_bottom .experence_bo
 article > section.history {
   width: 100%;
   margin: 0 auto 8rem;
+  max-width: 1920px;
 }
 
 article > section.history > h1 {
@@ -1436,6 +1438,7 @@ article > section.hotel {
 
 article > section.hotel > .hotel_contain {
   width: 80%;
+  max-width: 1920px;
   margin: 1rem auto;
 }
 
@@ -1658,6 +1661,7 @@ article > section.food {
 }
 
 article > section.food > .food_contain {
+  max-width: 1920px;
   width: 80%;
   margin: 1rem auto;
 }

@@ -257,10 +257,7 @@ header{
 }
 
 main{
-  max-width: 1920px;
-  margin: 0 auto;
   >.banner{
-
     >.banner_cntainer{
       height: 75vh;
       width: 100%;
@@ -332,6 +329,7 @@ main{
     }
   }
   >nav{
+    max-width: 1920px;
     width: 80%;
     margin: 0 auto;
     font-weight: $content-fw-s;
