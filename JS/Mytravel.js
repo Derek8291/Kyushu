@@ -6,6 +6,20 @@ window.onload = function() {
   const food_list = document.getElementsByClassName("food_list")[0];
   let hotelIsOpen = true;
   let foodIsOpen = true;
+
+  // 開場Banner進來=======================================>
+const banner_container_textarea = $('.banner_container_textarea');
+
+banner_container_textarea.addClass('bannerMove');
+  function bannerMove(){
+    let position = $('.tramethod').offset().top;
+    if(window.scrollY > position){
+      banner_container_textarea.removeClass('bannerMove');
+    }else{
+      banner_container_textarea.addClass('bannerMove');
+    }
+  };
+  
    // 旅館more開關====================================>
 
   hotelBtn.addEventListener("click", () => {
@@ -69,19 +83,6 @@ window.onload = function() {
     $('html, body').animate({scrollTop: 0}, 500);
   })
 
-
-// 開場Banner進來=======================================>
-const banner_container_textarea = $('.banner_container_textarea');
-
-banner_container_textarea.addClass('bannerMove');
-  function bannerMove(){
-    let position = $('.tramethod').offset().top;
-    if(window.scrollY > position){
-      banner_container_textarea.removeClass('bannerMove');
-    }else{
-      banner_container_textarea.addClass('bannerMove');
-    }
-  };
 
 // 九州絕景圖片進來=====================================>
   const tramethod_top_right = $('.tramethod_top_right');
