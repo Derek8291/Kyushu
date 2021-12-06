@@ -218,19 +218,19 @@ window.onload = function() {
 DOMrender(data)
 
 //內容點擊連結
-$('.viewrelease_item').on('click', () => {
-  window.location = "../popular.html";
-  window.location = "./popular.html";
-  window.location = "/popular.html";
+// $('.viewrelease_item').on('click', () => {
+//   window.location = "../popular.html";
+//   window.location = "./popular.html";
+//   window.location = "/popular.html";
 
 
-});
-$('.content_item').on('click', () => {
-  window.location = "../popular.html";
-  window.location = "./popular.html";
-  window.location = "/popular.html";
+// });
+// $('.content_item').on('click', () => {
+//   window.location = "../popular.html";
+//   window.location = "./popular.html";
+//   window.location = "/popular.html";
 
-})
+// })
 
 //類別按鈕
     function eventbtn(){
