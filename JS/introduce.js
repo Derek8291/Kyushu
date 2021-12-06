@@ -201,7 +201,7 @@ window.onload = function() {
           html += `
             <div class="viewrelease_item">
                 <div class="viewrelease_item_photo">
-                  <img src="../img/introduce/main/viewrelease-${obj.idx}.png" alt="">
+                  <img src="./img/introduce/main/viewrelease-${obj.idx}.png" alt="">
                   <span>${obj.area}</span>
                 </div>
                 <div class="viewrelease_item_text">
