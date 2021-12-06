@@ -768,13 +768,13 @@ main > main.content > .content_contain > .content_photo {
 @media (max-width: 1024px) {
   main > main.content > .content_contain > .content_photo {
     width: 100%;
-    height: 20rem;
+    height: 30rem;
   }
 }
 
 @media (max-width: 768px) {
   main > main.content > .content_contain > .content_photo {
-    height: 14rem;
+    height: 20rem;
   }
 }
 

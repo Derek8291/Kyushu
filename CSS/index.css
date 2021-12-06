@@ -278,8 +278,8 @@ header button.toTop.toTopBtn {
   left: 0;
   right: 0;
   opacity: 0;
-  -webkit-animation: photoGo  50s linear infinite;
-          animation: photoGo  50s linear infinite;
+  -webkit-animation: photoGo  25s linear infinite;
+          animation: photoGo  25s linear infinite;
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
@@ -291,23 +291,23 @@ header button.toTop.toTopBtn {
 }
 
 .banner > .banner_photo > img:nth-child(2) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.banner > .banner_photo > img:nth-child(3) {
   -webkit-animation-delay: 10s;
           animation-delay: 10s;
 }
 
-.banner > .banner_photo > img:nth-child(3) {
-  -webkit-animation-delay: 20s;
-          animation-delay: 20s;
-}
-
 .banner > .banner_photo > img:nth-child(4) {
-  -webkit-animation-delay: 30s;
-          animation-delay: 30s;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
 }
 
 .banner > .banner_photo > img:nth-child(5) {
-  -webkit-animation-delay: 40s;
-          animation-delay: 40s;
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
 }
 
 .banner > .logo_position {
@@ -1552,7 +1552,7 @@ main > article.magazine_introduce > .magazine_contain > .magazine_item > .magazi
   letter-spacing: 3px;
   color: #4C4948;
   margin-right: 5px;
-  font-size: 1px;
+  font-size: 12px;
 }
 
 footer > .footer_container {

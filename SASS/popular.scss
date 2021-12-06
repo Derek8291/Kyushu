@@ -607,10 +607,10 @@ main{
         background-color: #000;
         @include pro{
           width: 100%;
-          height: 20rem;
+          height: 30rem;
         }
         @include pad{
-          height: 14rem;
+          height: 20rem;
         }
         >div{
           height: 100%;
