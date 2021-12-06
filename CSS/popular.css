@@ -752,18 +752,21 @@ main > main.content > .content_contain {
         -ms-transform: translate(100vw);
             transform: translate(100vw);
   }
-}
-
-main > main.content > .content_contain.content_move_rt {
-  -webkit-transform: translate(5vw);
-      -ms-transform: translate(5vw);
-          transform: translate(5vw);
-}
-
-main > main.content > .content_contain.content_move_lf {
-  -webkit-transform: translate(0);
-      -ms-transform: translate(0);
-          transform: translate(0);
+  main > main.content > .content_contain:nth-of-type(even) {
+    -webkit-transform: translate(-100vw);
+        -ms-transform: translate(-100vw);
+            transform: translate(-100vw);
+  }
+  main > main.content > .content_contain.content_move_rt {
+    -webkit-transform: translate(5vw);
+        -ms-transform: translate(5vw);
+            transform: translate(5vw);
+  }
+  main > main.content > .content_contain.content_move_lf {
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
+  }
 }
 
 main > main.content > .content_contain > :first-child {

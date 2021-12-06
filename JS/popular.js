@@ -6,6 +6,7 @@ window.onload = function() {
   const content3 = document.getElementById("content_3");
   const content4 = document.getElementById("content_4");
   
+
   $(".banner_photo > li").hide();
   $("#banner_1").show();
   $(".banner_btn_area > div").on("click", banneraction);
