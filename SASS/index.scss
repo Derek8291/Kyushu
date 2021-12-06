@@ -388,7 +388,7 @@ header{
       border-right: 1px solid #fff;
       transition: bottom 0.3s;
       @include mobile{
-        bottom: 100px;
+        bottom: 60px;
       }
       &::after{
         content: "";
