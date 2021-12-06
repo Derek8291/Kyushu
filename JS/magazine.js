@@ -50,7 +50,7 @@ window.onload = function() {
       keyword1: '美食',
       keyword2: '度假',
       keyword3: '逛街',
-    },.
+    },
     { 
       name: 'oita',
       ctname: '大分',
