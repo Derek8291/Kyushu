@@ -4,13 +4,33 @@ window.onload = function() {
   const hotel_list = document.getElementsByClassName("hotel_list")[0];
   const foodBtn =  document.getElementById("food_extend_btn");
   const food_list = document.getElementsByClassName("food_list")[0];
+  let hotelIsOpen = true;
+  let foodIsOpen = true;
+   // 旅館more開關====================================>
 
   hotelBtn.addEventListener("click", () => {
     hotel_list.classList.toggle("hotel_extend");
+    if(hotelIsOpen === true) {
+      hotelBtn.innerText = "back";
+      console.log(foodIsOpen);
+      hotelIsOpen = false;
+    }else{
+      hotelBtn.innerText = "more";
+      hotelIsOpen = true;
+    }
   })
 
+   // 美食more開關====================================>
   foodBtn.addEventListener("click", () => {
     food_list.classList.toggle("food_extend");
+    if(foodIsOpen === true) {
+      foodBtn.innerText = "back";
+      console.log(foodIsOpen);
+      foodIsOpen = false;
+    }else{
+      foodBtn.innerText = "more";
+      foodIsOpen = true;
+    }
   })
 
    // 開關導覽列======================================>
