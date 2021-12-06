@@ -100,7 +100,7 @@ window.onload = function() {
     magazineMove();
     popularMove();
   }
-
+ 
 // 導覽列變色 + Scroll Bar出現 + GoTop=============>
   function navGreen(){
     let position = $('.kyushu_introduce').offset().top;
