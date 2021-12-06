@@ -66,7 +66,7 @@ window.onload = function() {
   const total_change = function(){
     let i = imageidx+1;
     travel_text_title.innerText = introduce_imf[imageidx].title;
-    travelchange.src = "/img/kyushu/main/Kyushu-introduce-"+ i +".jpg";
+    travelchange.src = "./img/kyushu/main/Kyushu-introduce-"+ i +".jpg";
     travel_text_content.innerText = introduce_imf[imageidx].content;
     county_name.innerText = introduce_imf[imageidx].county;
   };
@@ -148,7 +148,7 @@ window.onload = function() {
 // 雜誌圖片進來=====================================>
 
 function magazineMove(){
-  let position = ($('.magazine_contain').offset().top) - ($('.magazine_contain')[0].clientHeight)*2;
+  let position = ($('.magazine_contain').offset().top) - ($('.magazine_contain')[0].clientHeight)*3;
   if(window.scrollY > position){
     $('.magazine_contain').addClass('magazine_move');
   }else{
@@ -159,7 +159,7 @@ function magazineMove(){
 // 景點進來=====================================>
 
 function popularMove(){
-  let position = ($('.travel_contain').offset().top) - ($('.travel_contain')[0].clientHeight)*2;
+  let position = ($('.travel_contain').offset().top) - ($('.travel_contain')[0].clientHeight)*3;
   if(window.scrollY > position){
     $('.travel_contain').addClass('popular_move');
   }else{
