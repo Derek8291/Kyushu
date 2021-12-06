@@ -267,7 +267,7 @@ main{
       width: 100%;
       position: relative;
       overflow: hidden;
-      background-image: url("/img/kyushu/main/background-image.png");
+      background-image: url("../img/kyushu/main/background-image.png");
       background-repeat: repeat;
       background-color: red;
       >ul{
@@ -475,7 +475,7 @@ main{
     }
   }
   >aside.story{
-    background-image: url("/img/popularlace/story-1.jpg");
+    background-image: url("../img/popularlace/story-1.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
