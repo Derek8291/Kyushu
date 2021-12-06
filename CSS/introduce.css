@@ -274,7 +274,7 @@ main > article .banner .banner_container .banner_imagearea > h1 {
   color: #fff;
   text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
   font-weight: 700;
-  background-image: url("/img/introduce/banner/banner-1.jpg");
+  background-image: url("./img/introduce/banner/banner-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
