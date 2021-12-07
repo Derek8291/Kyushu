@@ -137,7 +137,7 @@ window.onload = function() {
 // 旅行圖片進來=====================================>
 
   function travelMove(){
-    let position = ($('.my_travel_contain').offset().top) - ($('.my_travel_contain')[0].clientHeight)/2;
+    let position = ($('.my_travel_contain').offset().top) - ($('.my_travel_contain')[0].clientHeight);
     if(window.scrollY > position){
       $('.my_travel_contain > ul').addClass('travel_move');
     }else{
@@ -149,7 +149,7 @@ window.onload = function() {
 const magazine_contain = $('.magazine_contain');
 
 function magazineMove(){
-  let position = (magazine_contain.offset().top) - (magazine_contain[0].clientHeight)*2;
+  let position = (magazine_contain.offset().top) - (magazine_contain[0].clientHeight)*3;
   if(window.scrollY > position){
     magazine_contain.addClass('magazine_move');
   }else{
