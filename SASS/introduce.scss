@@ -930,7 +930,7 @@ main{
         float:left;
         cursor: pointer;
         padding: 0 10px;
-        // transform: translateY(30vh);
+        transform: translateY(20vh);
         transition: transform .7s;
         &.viewrelease_item_move{
           transform: translate(0);

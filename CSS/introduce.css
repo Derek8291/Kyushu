@@ -1184,6 +1184,9 @@ main article.viewrelease > .viewrelease_contain > .viewrelease_item {
   float: left;
   cursor: pointer;
   padding: 0 10px;
+  -webkit-transform: translateY(20vh);
+      -ms-transform: translateY(20vh);
+          transform: translateY(20vh);
   -webkit-transition: -webkit-transform .7s;
   transition: -webkit-transform .7s;
   -o-transition: transform .7s;

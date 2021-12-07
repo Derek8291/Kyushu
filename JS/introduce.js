@@ -433,13 +433,13 @@ function searchRightMove(){
 const viewrelease_item = $('.viewrelease_item');
 
 function viewreleaseMove(){
-  let position = (viewrelease_item.offset().top) - (viewrelease_item[0].clientHeight*3);
+  let position = (viewrelease_item.offset().top) - (viewrelease_item[0].clientHeight)*2;
   if(window.scrollY > position){
-    viewrelease_item.addClass('viewrelease_item_move');
+    $('.viewrelease_item').addClass('viewrelease_item_move');
   }else{
-    viewrelease_item.removeClass('viewrelease_item_move');
+    $('.viewrelease_item').removeClass('viewrelease_item_move');
   };
 };
-
+console.log(viewrelease_item);
 
 }
