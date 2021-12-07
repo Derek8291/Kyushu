@@ -433,7 +433,7 @@ function searchRightMove(){
 const viewrelease_item = $('.viewrelease_item');
 
 function viewreleaseMove(){
-  let position = (viewrelease_item.offset().top) - (viewrelease_item[0].clientHeight*2);
+  let position = (viewrelease_item.offset().top) - (viewrelease_item[0].clientHeight*3);
   if(window.scrollY > position){
     viewrelease_item.addClass('viewrelease_item_move');
   }else{
