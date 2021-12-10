@@ -582,6 +582,7 @@ main{
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
         width: 95%;
         transform:translate(100vw);
+
         &:nth-of-type(even){
           transform:translate(-100vw);
         }
@@ -658,12 +659,14 @@ main{
         padding: 2%;
         z-index: 1;
         transition: all 0.7s;
+        
         &.canyon_txt{
           transform: translate(50vw);
           @include pro{
             order: -1;
             width: 100%;
             height: auto;
+            min-width:auto;
             background-color: rgba(67, 185, 168, 0.8);
             color: #fff;
             transform: translateY(0);

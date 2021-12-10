@@ -884,6 +884,7 @@ main > main.content > .content_contain > .content_container_txt.canyon_txt {
             order: -1;
     width: 100%;
     height: auto;
+    min-width: auto;
     background-color: rgba(67, 185, 168, 0.8);
     color: #fff;
     -webkit-transform: translateY(0);
