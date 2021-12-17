@@ -8,9 +8,10 @@ window.onload = function() {
   let foodIsOpen = true;
 
   // 開場Banner進來=======================================>
-const banner_container_textarea = $('.banner_container_textarea');
+  const banner_container_textarea = $('.banner_container_textarea');
+  
+  banner_container_textarea.addClass('bannerMove');
 
-banner_container_textarea.addClass('bannerMove');
   function bannerMove(){
     let position = $('.tramethod').offset().top;
     if(window.scrollY > position){
