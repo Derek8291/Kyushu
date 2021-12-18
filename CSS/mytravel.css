@@ -333,10 +333,10 @@ article > .banner > .banner_container > .banner_container_top > .banner_containe
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  opacity: .7;
-  -webkit-transform: translateX(-3%);
-      -ms-transform: translateX(-3%);
-          transform: translateX(-3%);
+  opacity: 1;
+  -webkit-transform: translateX(-1%);
+      -ms-transform: translateX(-1%);
+          transform: translateX(-1%);
 }
 
 @media (max-width: 1024px) {

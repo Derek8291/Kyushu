@@ -305,8 +305,8 @@ article{
             position:relative;
             color: #fff;
             transition: all 1s;
-            opacity: .7;
-            transform: translateX(-3%);
+            opacity: 1;
+            transform: translateX(-1%);
             @include pro{
               padding-left: 1rem;
             }
