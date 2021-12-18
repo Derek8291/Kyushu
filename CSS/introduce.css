@@ -1184,9 +1184,10 @@ main article.viewrelease > .viewrelease_contain > .viewrelease_item {
   float: left;
   cursor: pointer;
   padding: 0 10px;
-  -webkit-transform: translateY(20vh);
-      -ms-transform: translateY(20vh);
-          transform: translateY(20vh);
+  -webkit-transform: translateY(5%);
+      -ms-transform: translateY(5%);
+          transform: translateY(5%);
+  opacity: .7;
   -webkit-transition: -webkit-transform .7s;
   transition: -webkit-transform .7s;
   -o-transition: transform .7s;
@@ -1198,6 +1199,7 @@ main article.viewrelease > .viewrelease_contain > .viewrelease_item.viewrelease_
   -webkit-transform: translate(0);
       -ms-transform: translate(0);
           transform: translate(0);
+  opacity: 1;
 }
 
 @media (max-width: 1024px) {

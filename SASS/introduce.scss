@@ -930,10 +930,12 @@ main{
         float:left;
         cursor: pointer;
         padding: 0 10px;
-        transform: translateY(20vh);
+        transform: translateY(5%);
+        opacity: .7;
         transition: transform .7s;
         &.viewrelease_item_move{
           transform: translate(0);
+          opacity: 1;
         }
         @include pro{
           width: 50%;

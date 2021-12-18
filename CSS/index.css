@@ -1373,9 +1373,10 @@ main > article.magazine_introduce > .magazine_contain {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   position: relative;
-  -webkit-transform: translateY(30vh);
-      -ms-transform: translateY(30vh);
-          transform: translateY(30vh);
+  -webkit-transform: translateY(10%);
+      -ms-transform: translateY(10%);
+          transform: translateY(10%);
+  opacity: .7;
   -webkit-transition: -webkit-transform .7s;
   transition: -webkit-transform .7s;
   -o-transition: transform .7s;
@@ -1387,6 +1388,7 @@ main > article.magazine_introduce > .magazine_contain.magazine_move {
   -webkit-transform: translate(0);
       -ms-transform: translate(0);
           transform: translate(0);
+  opacity: 1;
 }
 
 @media (max-width: 1025px) {

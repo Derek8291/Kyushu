@@ -1051,10 +1051,12 @@ main{
       justify-content: space-between;
       flex-wrap: wrap;
       position:relative;
-      transform: translateY(30vh);
+      transform: translateY(10%);
+      opacity: .7;
       transition: transform .7s;
       &.magazine_move{
         transform: translate(0);
+        opacity: 1;
       }
       @include pro{
       justify-content: space-around;
