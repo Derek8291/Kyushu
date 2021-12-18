@@ -1187,7 +1187,7 @@ main article.viewrelease > .viewrelease_contain > .viewrelease_item {
   -webkit-transform: translateY(5%);
       -ms-transform: translateY(5%);
           transform: translateY(5%);
-  opacity: .7;
+  opacity: .9;
   -webkit-transition: -webkit-transform .7s;
   transition: -webkit-transform .7s;
   -o-transition: transform .7s;
