@@ -305,7 +305,7 @@ article{
             position:relative;
             color: #fff;
             transition: all 1s;
-            opacity: 1;
+            // opacity: 1;
             transform: translateX(-1%);
             @include pro{
               padding-left: 1rem;
@@ -316,7 +316,7 @@ article{
               width: 400px;
             }
             &.bannerMove{
-            opacity: 1;
+            // opacity: 1;
             background:
             linear-gradient(70deg,#43B9A8 53%, transparent 53%)center center / 100% 100%;
             transform: translateX(0);

@@ -333,7 +333,6 @@ article > .banner > .banner_container > .banner_container_top > .banner_containe
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  opacity: 1;
   -webkit-transform: translateX(-1%);
       -ms-transform: translateX(-1%);
           transform: translateX(-1%);
@@ -354,7 +353,6 @@ article > .banner > .banner_container > .banner_container_top > .banner_containe
 }
 
 article > .banner > .banner_container > .banner_container_top > .banner_container_textarea.bannerMove {
-  opacity: 1;
   background: -webkit-linear-gradient(20deg, #43B9A8 53%, transparent 53%) center center/100% 100%;
   background: -o-linear-gradient(20deg, #43B9A8 53%, transparent 53%) center center/100% 100%;
   background: linear-gradient(70deg, #43B9A8 53%, transparent 53%) center center/100% 100%;
