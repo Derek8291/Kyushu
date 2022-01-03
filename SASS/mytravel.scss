@@ -295,7 +295,7 @@ article{
             height: 85%;
             width: 100%;
             background:
-            linear-gradient(70deg,#43B9A8 0%, transparent 0%)center center / 100% 100%;
+            linear-gradient(70deg,#43B9A8 53%, transparent 53%)center center / 100% 100%;
             z-index: 100;
             display: flex;
             align-items: flex-start;
@@ -305,8 +305,6 @@ article{
             position:relative;
             color: #fff;
             transition: all 1s;
-            // opacity: 1;
-            transform: translateX(-1%);
             @include pro{
               padding-left: 1rem;
             }
@@ -316,10 +314,6 @@ article{
               width: 400px;
             }
             &.bannerMove{
-            // opacity: 1;
-            background:
-            linear-gradient(70deg,#43B9A8 53%, transparent 53%)center center / 100% 100%;
-            transform: translateX(0);
             @include pad{
               background:
               linear-gradient(70deg,#43B9A8 60%, transparent 60%)center center / 100% 100%;  
