@@ -471,7 +471,7 @@ main{
       width: 50%;
       height: 550px;
       position: relative;
-      transform: scale(.8) translateX(100vw);
+      transform: scale(.8) translateX(20vw);
       transition: all 1s;
       // border: 1px solid red;
       @include pro{
@@ -901,7 +901,7 @@ main{
       border: 1px solid #43B9A8;
       // border-radius: 20px;
       position:relative;
-      transform: translate(100vw);
+      transform: translate(20vw);
       transition: transform .7s;
       &.popular_move{
         transform: translate(0);

@@ -871,9 +871,9 @@ main > main.content > .content_contain > .content_container_txt {
 }
 
 main > main.content > .content_contain > .content_container_txt.canyon_txt {
-  -webkit-transform: translate(50vw);
-      -ms-transform: translate(50vw);
-          transform: translate(50vw);
+  -webkit-transform: translate(10vw);
+      -ms-transform: translate(10vw);
+          transform: translate(10vw);
 }
 
 @media (max-width: 1024px) {
@@ -900,9 +900,9 @@ main > main.content > .content_contain > .content_container_txt.canyon_txt.canyo
 }
 
 main > main.content > .content_contain > .content_container_txt.train_txt {
-  -webkit-transform: translate(-50vw);
-      -ms-transform: translate(-50vw);
-          transform: translate(-50vw);
+  -webkit-transform: translate(-10vw);
+      -ms-transform: translate(-10vw);
+          transform: translate(-10vw);
 }
 
 @media (max-width: 1024px) {
@@ -925,9 +925,9 @@ main > main.content > .content_contain > .content_container_txt.train_txt.train_
 }
 
 main > main.content > .content_contain > .content_container_txt.temple_txt {
-  -webkit-transform: translate(50vw);
-      -ms-transform: translate(50vw);
-          transform: translate(50vw);
+  -webkit-transform: translate(10vw);
+      -ms-transform: translate(10vw);
+          transform: translate(10vw);
 }
 
 @media (max-width: 1024px) {
@@ -954,9 +954,9 @@ main > main.content > .content_contain > .content_container_txt.temple_txt.templ
 }
 
 main > main.content > .content_contain > .content_container_txt.shrine_txt {
-  -webkit-transform: translate(-50vw);
-      -ms-transform: translate(-50vw);
-          transform: translate(-50vw);
+  -webkit-transform: translate(-10vw);
+      -ms-transform: translate(-10vw);
+          transform: translate(-10vw);
 }
 
 @media (max-width: 1024px) {

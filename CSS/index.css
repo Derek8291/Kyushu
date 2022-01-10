@@ -539,9 +539,9 @@ main > article.kyushu_introduce > .kyushu-map {
   width: 50%;
   height: 550px;
   position: relative;
-  -webkit-transform: scale(0.8) translateX(100vw);
-      -ms-transform: scale(0.8) translateX(100vw);
-          transform: scale(0.8) translateX(100vw);
+  -webkit-transform: scale(0.8) translateX(20vw);
+      -ms-transform: scale(0.8) translateX(20vw);
+          transform: scale(0.8) translateX(20vw);
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
@@ -1133,9 +1133,9 @@ main > article.travel_introduce > .travel_contain {
   display: flex;
   border: 1px solid #43B9A8;
   position: relative;
-  -webkit-transform: translate(100vw);
-      -ms-transform: translate(100vw);
-          transform: translate(100vw);
+  -webkit-transform: translate(20vw);
+      -ms-transform: translate(20vw);
+          transform: translate(20vw);
   -webkit-transition: -webkit-transform .7s;
   transition: -webkit-transform .7s;
   -o-transition: transform .7s;
